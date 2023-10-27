@@ -35,7 +35,7 @@ func TestGeneratePrivateKeyPaseto(t *testing.T) {
 func TestHashFunction(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "Gischp5coba")
 	var userdata User
-	userdata.Username = "Gischp5cobaweh"
+	userdata.Username = "Gisgcpcoba"
 	userdata.Password = "gischp5"
 
 	filter := bson.M{"username": userdata.Username}
@@ -51,7 +51,7 @@ func TestHashFunction(t *testing.T) {
 func TestIsPasswordValid(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "Gischp5coba")
 	var userdata User
-	userdata.Username = "Gischp5cobaweh"
+	userdata.Username = "Gisgcpcoba"
 	userdata.Password = "gischp5"
 
 	anu := IsPasswordValid(mconn, "user", userdata)
@@ -61,7 +61,7 @@ func TestIsPasswordValid(t *testing.T) {
 func TestInsertUser(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "Gischp5coba")
 	var userdata User
-	userdata.Username = "Gischp5cobaweh"
+	userdata.Username = "Gisgcpcoba"
 	userdata.Password = "gischp5"
 
 	nama := InsertUser(mconn, "user", userdata)
